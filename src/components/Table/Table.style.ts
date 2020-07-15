@@ -6,5 +6,5 @@ export const StyledTable = styled.table`
     border-collapse: separate;
     border-spacing: 0;
     background: #ffffff;
-    color: #000;
+    color: ${(props) => props.theme.color.text.alpha};
 `;

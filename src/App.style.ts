@@ -20,6 +20,7 @@ export const StyledContentHeader = styled.div`
     background: ${(props) => props.theme.color.background.alpha};
     font-size: 18px;
     font-weight: 600;
-    padding: 15px 20px;
+    padding: ${(props) => props.theme.padding.md}
+        ${(props) => props.theme.padding.xl};
     border-bottom: 1px solid ${(props) => props.theme.color.border};
 `;

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { StyledTableRow } from '../Row/Row.style';
 
 export const StyledTableBodyColumn = styled.td`
-    padding: 3px 11px;
-    border: 0.5px solid #d9d9d9;
+    padding: ${(props) => props.theme.padding.sm};
+    border: 1px solid #d9d9d9;
     :nth-child(1) {
         text-align: center;
     }
@@ -24,7 +24,7 @@ export const TableSpan = styled.div`
 export const StyledBody = styled.tbody`
     ${StyledTableRow} {
         :nth-of-type(odd) {
-            background: #f2f2f2;
+            background: ${(props) => props.theme.color.background.beta};
         }
     }
 `;
