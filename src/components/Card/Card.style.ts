@@ -15,7 +15,10 @@ export const StyledCardDiv = styled.div`
 `;
 
 export const StyledCard = styled.div`
-    padding: 10px;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
+    max-width: 75%;
+    padding: ${(props) => props.theme.padding.sm};
+    margin: ${(props) => props.theme.padding.lg};
+    border: 1px solid ${(props) => props.theme.color.border};
+    border-radius: ${(props) => props.theme.padding.sm};
+    background: ${(props) => props.theme.color.background.alpha};
 `;
