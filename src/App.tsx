@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { Card } from './components/Card/Card';
+import { Sidebar } from './components/Sidebar/Sidebar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { StyledApp } from './App.style';
+import { DeviceProvider, theme, AtlanticProvider } from 'react-atlantic';
+import { ThemeProvider } from 'styled-components';
+export interface IAppProps {}
 
-export default App;
+export const App: React.FC<IAppProps> = () => {
+    return (
+        <AtlanticProvider theme={theme}>
+            <ThemeProvider theme={theme}>
+                <DeviceProvider>
+                    <StyledApp>
+                        <Sidebar />
+                        <Card />
+                    </StyledApp>
+                </DeviceProvider>
+            </ThemeProvider>
+        </AtlanticProvider>
+    );
+};
