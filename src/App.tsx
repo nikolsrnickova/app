@@ -5,6 +5,7 @@ import {
     StyledContainer,
     StyledLeftContent,
     StyledRightContent,
+    StyledContentHeader,
 } from './App.style';
 import { DeviceProvider, theme, AtlanticProvider } from 'react-atlantic';
 import { ThemeProvider } from 'styled-components';
@@ -20,6 +21,9 @@ export const App: React.FC<IAppProps> = () => {
                             <Sidebar />
                         </StyledLeftContent>
                         <StyledRightContent>
+                            <StyledContentHeader>
+                                Seznam uživatelských účtů
+                            </StyledContentHeader>
                             <Card />
                         </StyledRightContent>
                     </StyledContainer>

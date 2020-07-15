@@ -4,7 +4,6 @@ export const StyledSideList = styled.ul`
     padding: 30px 20px;
     border-top: 1px solid #777777;
     list-style-type: none;
-    font-size: 18px;
 `;
 
 export const StyledSideListIn = styled(StyledSideList)`

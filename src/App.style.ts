@@ -13,4 +13,13 @@ export const StyledLeftContent = styled.div`
 export const StyledRightContent = styled.div`
     flex: 4;
     background: ${(props) => props.theme.color.background.gamma};
+    border: 1px solid ${(props) => props.theme.color.border};
+`;
+
+export const StyledContentHeader = styled.div`
+    background: ${(props) => props.theme.color.background.alpha};
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-bottom: 1px solid ${(props) => props.theme.color.border};
 `;

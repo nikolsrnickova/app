@@ -15,7 +15,7 @@ export const StyledCardDiv = styled.div`
 `;
 
 export const StyledCard = styled.div`
-    max-width: 75%;
+    max-width: 80%;
     padding: ${(props) => props.theme.padding.sm};
     margin: ${(props) => props.theme.padding.lg};
     border: 1px solid ${(props) => props.theme.color.border};
