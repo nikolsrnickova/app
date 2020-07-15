@@ -3,7 +3,8 @@ import { StyledBody } from './Body.style';
 import { TableRow } from './../Row/Row';
 import { StyledTableBodyColumn, TableDiv, TableSpan } from './Body.style';
 import { Checkbox } from './../Checkbox/Checkbox';
-import { Button } from '../Button/Button';
+import { Button } from '../../Button';
+import { StyledButton } from '../../Button/style';
 
 export const Body: React.FC = () => {
     return (
@@ -20,7 +21,9 @@ export const Body: React.FC = () => {
                 <StyledTableBodyColumn>
                     <TableDiv>
                         <TableSpan>Licence 1, Licence 2</TableSpan>
-                        <Button />
+                        <StyledButton typeOfButton={'default'}>
+                            Detail
+                        </StyledButton>
                     </TableDiv>
                 </StyledTableBodyColumn>
             </TableRow>

@@ -5,9 +5,9 @@ import {
     StyledCardRow,
     StyledCardDiv,
 } from './Card.style';
-import { Button } from './Button/Button';
 import { Select } from './Select/Select';
 import { Table } from '../Table/Table';
+import { Button } from 'react-atlantic';
 
 export const Card: React.FC = () => {
     return (
@@ -18,7 +18,7 @@ export const Card: React.FC = () => {
                     <Select />
                 </StyledCardDiv>
                 <StyledCardDiv>
-                    <Button />
+                    <Button type={'success'}>+ Vytvořit uživatele</Button>
                 </StyledCardDiv>
             </StyledCardRow>
             <Table />
