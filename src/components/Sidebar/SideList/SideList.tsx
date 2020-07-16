@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     StyledSideList,
-    StyledSideListIn,
     StyledSideItem,
     StyledLink,
 } from './style/SideList.style';
@@ -11,12 +10,14 @@ export const SideList: React.FC = () => {
         <StyledSideList>
             <StyledSideItem>
                 <StyledLink>Uživatele</StyledLink>
-                <StyledSideListIn>
+                <StyledSideList>
                     <StyledSideItem>
                         <StyledLink> Vybrat uživatele</StyledLink>
+                    </StyledSideItem>
+                    <StyledSideItem>
                         <StyledLink> Hromadný import</StyledLink>
                     </StyledSideItem>
-                </StyledSideListIn>
+                </StyledSideList>
             </StyledSideItem>
             <StyledSideItem>
                 <StyledLink>Licence</StyledLink>

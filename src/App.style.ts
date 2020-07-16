@@ -2,6 +2,7 @@ import { styled } from './utils/styled';
 
 export const StyledContainer = styled.div`
     font-family: ${(props) => props.theme.font.family};
+    height: 100%;
     display: flex;
 `;
 

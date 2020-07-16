@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     StyledCard,
-    StyledText,
+    StyledSelectText,
     StyledCardRow,
     StyledCardDiv,
 } from './style/Card.style';
@@ -14,7 +14,9 @@ export const Card: React.FC = () => {
         <StyledCard>
             <StyledCardRow>
                 <StyledCardDiv>
-                    <StyledText>Pro vybrané uživatele (2)</StyledText>
+                    <StyledSelectText>
+                        Pro vybrané uživatele (2)
+                    </StyledSelectText>
                     <Select />
                 </StyledCardDiv>
                 <StyledCardDiv>

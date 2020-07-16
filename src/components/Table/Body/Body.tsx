@@ -3,7 +3,7 @@ import { StyledBody } from './style/Body.style';
 import { TableRow } from './../Row/Row';
 import { StyledTableBodyColumn, TableDiv, TableSpan } from './style/Body.style';
 import { Checkbox } from './../Checkbox/Checkbox';
-import { StyledButton } from '../../Button/style';
+import { Button } from 'react-atlantic';
 
 export const Body: React.FC = () => {
     return (
@@ -20,9 +20,7 @@ export const Body: React.FC = () => {
                 <StyledTableBodyColumn>
                     <TableDiv>
                         <TableSpan>Licence 1, Licence 2</TableSpan>
-                        <StyledButton typeOfButton={'default'}>
-                            Detail
-                        </StyledButton>
+                        <Button type={'default'}>Detail</Button>
                     </TableDiv>
                 </StyledTableBodyColumn>
             </TableRow>
@@ -38,9 +36,7 @@ export const Body: React.FC = () => {
                 <StyledTableBodyColumn>
                     <TableDiv>
                         <TableSpan>Licence 1, Licence 2</TableSpan>
-                        <StyledButton typeOfButton={'default'}>
-                            Detail
-                        </StyledButton>
+                        <Button type={'default'}>Detail</Button>
                     </TableDiv>
                 </StyledTableBodyColumn>
             </TableRow>
@@ -56,9 +52,7 @@ export const Body: React.FC = () => {
                 <StyledTableBodyColumn>
                     <TableDiv>
                         <TableSpan>Licence 1, Licence 2</TableSpan>
-                        <StyledButton typeOfButton={'default'}>
-                            Detail
-                        </StyledButton>
+                        <Button type={'default'}>Detail</Button>
                     </TableDiv>
                 </StyledTableBodyColumn>
             </TableRow>
@@ -74,9 +68,7 @@ export const Body: React.FC = () => {
                 <StyledTableBodyColumn>
                     <TableDiv>
                         <TableSpan>Licence 1, Licence 2</TableSpan>
-                        <StyledButton typeOfButton={'default'}>
-                            Detail
-                        </StyledButton>
+                        <Button type={'default'}>Detail</Button>
                     </TableDiv>
                 </StyledTableBodyColumn>
             </TableRow>

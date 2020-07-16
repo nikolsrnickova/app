@@ -3,7 +3,7 @@ import { StyledTableRow } from '../../Row/style/Row.style';
 
 export const StyledTableBodyColumn = styled.td`
     padding: ${(props) => props.theme.padding.sm};
-    border: 1px solid #d9d9d9;
+    border: 1px solid ${(props) => props.theme.color.border};
     :nth-child(1) {
         text-align: center;
     }

@@ -7,7 +7,11 @@ export const StyledSidebar = styled.div`
 `;
 
 export const StyledLogout = styled.div`
-    padding: 200px 70px 30px;
+    height: 500px;
+    padding-left: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
 `;
 
 export const StyledLogoutLink = styled.a`
