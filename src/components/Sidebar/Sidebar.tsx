@@ -4,7 +4,7 @@ import {
     StyledLogout,
     StyledLogoutLink,
 } from './style/Sidebar.style';
-import { Logo } from './Logo/Logo';
+import { Logo } from '../Logo/Logo';
 import { SideList } from './SideList/SideList';
 
 export const Sidebar: React.FC = () => {

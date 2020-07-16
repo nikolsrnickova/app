@@ -1,6 +1,6 @@
 import { styled } from './utils/styled';
 
-export const StyledContainer = styled.div`
+export const StyledDesktopLayout = styled.div`
     font-family: ${(props) => props.theme.font.family};
     height: 100%;
     display: flex;
@@ -24,4 +24,11 @@ export const StyledContentHeader = styled.div`
     padding: ${(props) => props.theme.padding.md}
         ${(props) => props.theme.padding.xl};
     border-bottom: 1px solid ${(props) => props.theme.color.border};
+`;
+
+export const StyledMobileLayout = styled(StyledDesktopLayout)`
+    font-family: ${(props) => props.theme.font.family};
+    height: auto;
+    width: 100%;
+    display: block;
 `;

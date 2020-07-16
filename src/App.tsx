@@ -2,10 +2,11 @@ import * as React from 'react';
 import { Card } from './components/Card/Card';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import {
-    StyledContainer,
+    StyledDesktopLayout,
     StyledLeftContent,
     StyledRightContent,
     StyledContentHeader,
+    StyledMobileLayout,
 } from './App.style';
 import {
     theme,
@@ -16,6 +17,7 @@ import {
 import { GlobalStyle } from './Global.style';
 import { ThemeProvider } from 'styled-components';
 import { Device } from './utils/Device';
+import { HeaderNav } from './components/HeaderNav';
 
 export interface IAppProps {}
 
@@ -24,7 +26,7 @@ export const App: React.FC<IAppProps> = () => {
         <AtlanticProvider theme={theme}>
             <ThemeProvider theme={theme}>
                 <Device devices={['desktop', 'laptop']}>
-                    <StyledContainer>
+                    <StyledDesktopLayout>
                         <StyledLeftContent>
                             <Sidebar />
                         </StyledLeftContent>
@@ -34,10 +36,12 @@ export const App: React.FC<IAppProps> = () => {
                             </StyledContentHeader>
                             <Card />
                         </StyledRightContent>
-                    </StyledContainer>
+                    </StyledDesktopLayout>
                 </Device>
                 <Device devices={['mobile']}>
-                    <p>scbsdbcsdbcs</p>
+                    <StyledMobileLayout>
+                        <HeaderNav />
+                    </StyledMobileLayout>
                 </Device>
                 <GlobalStyle />
             </ThemeProvider>
