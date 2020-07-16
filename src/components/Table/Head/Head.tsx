@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledHead } from './Head.style';
+import { StyledHead } from './style/Head.style';
 import { TableRow } from './../Row/Row';
-import { StyledTableHeadColumn } from './Head.style';
+import { StyledTableHeadColumn } from './style/Head.style';
 import { Checkbox } from './../Checkbox/Checkbox';
 
 export const Head: React.FC = () => {

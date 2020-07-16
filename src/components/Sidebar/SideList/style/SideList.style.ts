@@ -1,4 +1,4 @@
-import { styled } from '../../../utils/styled';
+import { styled } from '../../../../utils/styled';
 
 export const StyledSideList = styled.ul`
     padding: 30px 20px;

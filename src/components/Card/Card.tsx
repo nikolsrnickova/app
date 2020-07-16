@@ -4,7 +4,7 @@ import {
     StyledText,
     StyledCardRow,
     StyledCardDiv,
-} from './Card.style';
+} from './style/Card.style';
 import { Select } from './Select/Select';
 import { Table } from '../Table/Table';
 import { Button } from 'react-atlantic';

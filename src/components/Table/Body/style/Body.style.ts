@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { StyledTableRow } from '../Row/Row.style';
+import { StyledTableRow } from '../../Row/style/Row.style';
 
 export const StyledTableBodyColumn = styled.td`
     padding: ${(props) => props.theme.padding.sm};

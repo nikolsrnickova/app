@@ -4,7 +4,7 @@ import {
     StyledSideListIn,
     StyledSideItem,
     StyledLink,
-} from './SideList.style';
+} from './style/SideList.style';
 
 export const SideList: React.FC = () => {
     return (

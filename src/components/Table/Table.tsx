@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledTable } from './Table.style';
+import { StyledTable } from './style/Table.style';
 import { Head } from './Head/Head';
 import { Body } from './Body/Body';
 

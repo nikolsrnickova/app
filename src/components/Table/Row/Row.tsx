@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledTableRow } from './Row.style';
+import { StyledTableRow } from './style/Row.style';
 
 export const TableRow: React.FC = (props) => {
     return <StyledTableRow>{props.children}</StyledTableRow>;

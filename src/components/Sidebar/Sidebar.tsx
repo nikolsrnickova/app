@@ -1,5 +1,9 @@
 import React from 'react';
-import { StyledSidebar, StyledLogout, StyledLogoutLink } from './Sidebar.style';
+import {
+    StyledSidebar,
+    StyledLogout,
+    StyledLogoutLink,
+} from './style/Sidebar.style';
 import { Logo } from './Logo/Logo';
 import { SideList } from './SideList/SideList';
 

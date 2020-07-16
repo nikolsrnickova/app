@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledSelect } from './Select.style';
+import { StyledSelect } from './style/Select.style';
 
 export const Select: React.FC = () => {
     return (

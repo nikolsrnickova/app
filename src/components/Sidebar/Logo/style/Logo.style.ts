@@ -1,4 +1,4 @@
-import { styled } from '../../../utils/styled';
+import { styled } from '../../../../utils/styled';
 
 export const StyledLogo = styled.div`
     width: 220px;

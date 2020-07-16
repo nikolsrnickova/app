@@ -7,7 +7,7 @@ import {
     StyledRightContent,
     StyledContentHeader,
 } from './App.style';
-import { DeviceProvider, theme, AtlanticProvider } from 'react-atlantic';
+import { DeviceProvider, theme, AtlanticProvider, Device } from 'react-atlantic';
 import { ThemeProvider } from 'styled-components';
 export interface IAppProps {}
 
@@ -16,6 +16,7 @@ export const App: React.FC<IAppProps> = () => {
         <AtlanticProvider theme={theme}>
             <ThemeProvider theme={theme}>
                 <DeviceProvider>
+                    <Device devices={['desktop', 'laptop']}>
                     <StyledContainer>
                         <StyledLeftContent>
                             <Sidebar />
@@ -27,6 +28,7 @@ export const App: React.FC<IAppProps> = () => {
                             <Card />
                         </StyledRightContent>
                     </StyledContainer>
+                    </Device>
                 </DeviceProvider>
             </ThemeProvider>
         </AtlanticProvider>

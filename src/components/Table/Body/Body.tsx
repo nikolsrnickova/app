@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledBody } from './Body.style';
+import { StyledBody } from './style/Body.style';
 import { TableRow } from './../Row/Row';
-import { StyledTableBodyColumn, TableDiv, TableSpan } from './Body.style';
+import { StyledTableBodyColumn, TableDiv, TableSpan } from './style/Body.style';
 import { Checkbox } from './../Checkbox/Checkbox';
 import { StyledButton } from '../../Button/style';
 
