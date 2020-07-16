@@ -14,7 +14,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
     vertical-align: middle;
     color: ${(props) => props.theme.color.text.alpha};
     border: 1px solid ${(props) => props.theme.color.border};
-    border-radius: ${(props) => props.theme.padding.xs};
+    border-radius: ${(props) => props.theme.radius};
     padding: ${(props) => props.theme.padding.sm}
         ${(props) => props.theme.padding.md};
 `;

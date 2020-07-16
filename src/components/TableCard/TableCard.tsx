@@ -1,17 +1,17 @@
 import React from 'react';
 import {
-    StyledCard,
+    StyledTableCard,
     StyledSelectText,
     StyledCardRow,
     StyledCardDiv,
-} from './style/Card.style';
+} from './style/TableCard.style';
 import { Select } from './Select/Select';
 import { Table } from '../Table/Table';
 import { Button } from 'react-atlantic';
 
-export const Card: React.FC = () => {
+export const TableCard: React.FC = () => {
     return (
-        <StyledCard>
+        <StyledTableCard>
             <StyledCardRow>
                 <StyledCardDiv>
                     <StyledSelectText>
@@ -24,6 +24,6 @@ export const Card: React.FC = () => {
                 </StyledCardDiv>
             </StyledCardRow>
             <Table />
-        </StyledCard>
+        </StyledTableCard>
     );
 };

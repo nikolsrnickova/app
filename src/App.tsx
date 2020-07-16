@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Card } from './components/Card/Card';
+import { TableCard } from './components/TableCard/TableCard';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import {
     StyledDesktopLayout,
@@ -18,6 +18,7 @@ import { ThemeProvider } from 'styled-components';
 import { Device } from './utils/Device';
 import { HeaderNav } from './components/HeaderNav';
 import { HeaderContent } from './components/HeaderContent';
+import { MobileCard } from './components/MobileCard';
 
 export interface IAppProps {}
 
@@ -32,7 +33,7 @@ export const App: React.FC<IAppProps> = () => {
                         </StyledPanel>
                         <StyledContent>
                             <HeaderContent />
-                            <Card />
+                            <TableCard />
                         </StyledContent>
                     </StyledDesktopLayout>
                 </Device>
@@ -41,6 +42,10 @@ export const App: React.FC<IAppProps> = () => {
                         <HeaderNav />
                         <StyledContent>
                             <HeaderContent />
+                            <MobileCard />
+                            <MobileCard />
+                            <MobileCard />
+                            <MobileCard />
                         </StyledContent>
                     </StyledMobileLayout>
                 </Device>

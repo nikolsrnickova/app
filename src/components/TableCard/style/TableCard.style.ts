@@ -14,7 +14,7 @@ export const StyledCardDiv = styled.div`
     align-self: center;
 `;
 
-export const StyledCard = styled.div`
+export const StyledTableCard = styled.div`
     max-width: 80%;
     padding: ${(props) => props.theme.padding.sm};
     margin: ${(props) => props.theme.margin.lg};
