@@ -3,9 +3,8 @@ import { Card } from './components/Card/Card';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import {
     StyledDesktopLayout,
-    StyledLeftContent,
-    StyledRightContent,
-    StyledContentHeader,
+    StyledPanel,
+    StyledContent,
     StyledMobileLayout,
 } from './App.style';
 import {
@@ -18,6 +17,7 @@ import { GlobalStyle } from './Global.style';
 import { ThemeProvider } from 'styled-components';
 import { Device } from './utils/Device';
 import { HeaderNav } from './components/HeaderNav';
+import { HeaderContent } from './components/HeaderContent';
 
 export interface IAppProps {}
 
@@ -27,20 +27,21 @@ export const App: React.FC<IAppProps> = () => {
             <ThemeProvider theme={theme}>
                 <Device devices={['desktop', 'laptop']}>
                     <StyledDesktopLayout>
-                        <StyledLeftContent>
+                        <StyledPanel>
                             <Sidebar />
-                        </StyledLeftContent>
-                        <StyledRightContent>
-                            <StyledContentHeader>
-                                Seznam uživatelských účtů
-                            </StyledContentHeader>
+                        </StyledPanel>
+                        <StyledContent>
+                            <HeaderContent />
                             <Card />
-                        </StyledRightContent>
+                        </StyledContent>
                     </StyledDesktopLayout>
                 </Device>
                 <Device devices={['mobile']}>
                     <StyledMobileLayout>
                         <HeaderNav />
+                        <StyledContent>
+                            <HeaderContent />
+                        </StyledContent>
                     </StyledMobileLayout>
                 </Device>
                 <GlobalStyle />
