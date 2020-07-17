@@ -1,7 +1,11 @@
 import React from 'react';
-import { StyledBody } from './style/Body.style';
+import {
+    StyledBody,
+    StyledTableBodyColumn,
+    StyledTableColumnTwo,
+    StyledTableColumnText,
+} from './style/Body.style';
 import { TableRow } from './../Row/Row';
-import { StyledTableBodyColumn, TableDiv, TableSpan } from './style/Body.style';
 import { Checkbox } from './../Checkbox/Checkbox';
 import { Button } from 'react-atlantic';
 
@@ -18,10 +22,12 @@ export const Body: React.FC = () => {
                 </StyledTableBodyColumn>
                 <StyledTableBodyColumn>Martin Šlosár</StyledTableBodyColumn>
                 <StyledTableBodyColumn>
-                    <TableDiv>
-                        <TableSpan>Licence 1, Licence 2</TableSpan>
+                    <StyledTableColumnTwo>
+                        <StyledTableColumnText>
+                            Licence 1, Licence 2
+                        </StyledTableColumnText>
                         <Button type={'default'}>Detail</Button>
-                    </TableDiv>
+                    </StyledTableColumnTwo>
                 </StyledTableBodyColumn>
             </TableRow>
             <TableRow>
@@ -34,10 +40,12 @@ export const Body: React.FC = () => {
                 </StyledTableBodyColumn>
                 <StyledTableBodyColumn>Martin Šlosár</StyledTableBodyColumn>
                 <StyledTableBodyColumn>
-                    <TableDiv>
-                        <TableSpan>Licence 1, Licence 2</TableSpan>
+                    <StyledTableColumnTwo>
+                        <StyledTableColumnText>
+                            Licence 1, Licence 2
+                        </StyledTableColumnText>
                         <Button type={'default'}>Detail</Button>
-                    </TableDiv>
+                    </StyledTableColumnTwo>
                 </StyledTableBodyColumn>
             </TableRow>
             <TableRow>
@@ -50,10 +58,12 @@ export const Body: React.FC = () => {
                 </StyledTableBodyColumn>
                 <StyledTableBodyColumn>Martin Šlosár</StyledTableBodyColumn>
                 <StyledTableBodyColumn>
-                    <TableDiv>
-                        <TableSpan>Licence 1, Licence 2</TableSpan>
+                    <StyledTableColumnTwo>
+                        <StyledTableColumnText>
+                            Licence 1, Licence 2
+                        </StyledTableColumnText>
                         <Button type={'default'}>Detail</Button>
-                    </TableDiv>
+                    </StyledTableColumnTwo>
                 </StyledTableBodyColumn>
             </TableRow>
             <TableRow>
@@ -66,10 +76,12 @@ export const Body: React.FC = () => {
                 </StyledTableBodyColumn>
                 <StyledTableBodyColumn>Martin Šlosár</StyledTableBodyColumn>
                 <StyledTableBodyColumn>
-                    <TableDiv>
-                        <TableSpan>Licence 1, Licence 2</TableSpan>
+                    <StyledTableColumnTwo>
+                        <StyledTableColumnText>
+                            Licence 1, Licence 2
+                        </StyledTableColumnText>
                         <Button type={'default'}>Detail</Button>
-                    </TableDiv>
+                    </StyledTableColumnTwo>
                 </StyledTableBodyColumn>
             </TableRow>
         </StyledBody>

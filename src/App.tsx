@@ -7,12 +7,7 @@ import {
     StyledContent,
     StyledMobileLayout,
 } from './App.style';
-import {
-    theme,
-    AtlanticProvider,
-    /*Device,
-    DeviceProvider,*/
-} from 'react-atlantic';
+import { theme, AtlanticProvider } from 'react-atlantic';
 import { GlobalStyle } from './Global.style';
 import { ThemeProvider } from 'styled-components';
 import { Device } from './utils/Device';
@@ -27,7 +22,7 @@ export const App: React.FC<IAppProps> = () => {
     return (
         <AtlanticProvider theme={theme}>
             <ThemeProvider theme={theme}>
-                <Device devices={['desktop', 'laptop']}>
+                <Device devices={['desktop', 'laptop', 'tabletHorizontal']}>
                     <StyledDesktopLayout>
                         <StyledPanel>
                             <Sidebar />
@@ -38,7 +33,7 @@ export const App: React.FC<IAppProps> = () => {
                         </StyledContent>
                     </StyledDesktopLayout>
                 </Device>
-                <Device devices={['mobile']}>
+                <Device devices={['mobile', 'tabletVertical']}>
                     <StyledMobileLayout>
                         <HeaderNav />
                         <StyledContent>

@@ -3,7 +3,7 @@ import {
     StyledTableCard,
     StyledSelectText,
     StyledCardRow,
-    StyledCardDiv,
+    StyledCardBlock,
 } from './style/TableCard.style';
 import { Select } from './Select/Select';
 import { Table } from '../Table/Table';
@@ -13,15 +13,15 @@ export const TableCard: React.FC = () => {
     return (
         <StyledTableCard>
             <StyledCardRow>
-                <StyledCardDiv>
+                <StyledCardBlock>
                     <StyledSelectText>
                         Pro vybrané uživatele (2)
                     </StyledSelectText>
                     <Select />
-                </StyledCardDiv>
-                <StyledCardDiv>
+                </StyledCardBlock>
+                <StyledCardBlock>
                     <Button type={'success'}>+ Vytvořit uživatele</Button>
-                </StyledCardDiv>
+                </StyledCardBlock>
             </StyledCardRow>
             <Table />
         </StyledTableCard>

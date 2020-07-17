@@ -18,7 +18,6 @@ export const StyledContent = styled.div`
 `;
 
 export const StyledMobileLayout = styled(StyledDesktopLayout)`
-    font-family: ${(props) => props.theme.font.family};
     height: auto;
     width: 100%;
     display: block;

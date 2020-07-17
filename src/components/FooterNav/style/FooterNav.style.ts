@@ -18,8 +18,8 @@ export const StyledFooterList = styled.ul`
 `;
 
 export const StyledFooterListItem = styled.li<StyledFooterListItemProps>`
-    display: inline;
-    padding: 0px ${(props) => props.theme.padding.lg};
+    display: inline-block;
+    width: 25%;
 
     ${(props) =>
         props.isActive &&

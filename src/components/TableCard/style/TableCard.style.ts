@@ -10,7 +10,7 @@ export const StyledCardRow = styled.div`
     padding: ${(props) => props.theme.padding.sm};
 `;
 
-export const StyledCardDiv = styled.div`
+export const StyledCardBlock = styled.div`
     align-self: center;
 `;
 

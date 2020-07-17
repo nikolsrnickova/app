@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyledHead } from './style/Head.style';
+import { StyledTableHead } from './style/Head.style';
 import { TableRow } from './../Row/Row';
 import { StyledTableHeadColumn } from './style/Head.style';
 import { Checkbox } from './../Checkbox/Checkbox';
 
 export const Head: React.FC = () => {
     return (
-        <StyledHead>
+        <StyledTableHead>
             <TableRow>
                 <StyledTableHeadColumn>
                     <Checkbox />
@@ -16,6 +16,6 @@ export const Head: React.FC = () => {
                 <StyledTableHeadColumn>Jméno</StyledTableHeadColumn>
                 <StyledTableHeadColumn>Licence</StyledTableHeadColumn>
             </TableRow>
-        </StyledHead>
+        </StyledTableHead>
     );
 };
