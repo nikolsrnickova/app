@@ -19,6 +19,7 @@ import { Device } from './utils/Device';
 import { HeaderNav } from './components/HeaderNav';
 import { HeaderContent } from './components/HeaderContent';
 import { MobileCard } from './components/MobileCard';
+import { FooterNav } from './components/FooterNav';
 
 export interface IAppProps {}
 
@@ -46,6 +47,7 @@ export const App: React.FC<IAppProps> = () => {
                             <MobileCard />
                             <MobileCard />
                             <MobileCard />
+                            <FooterNav />
                         </StyledContent>
                     </StyledMobileLayout>
                 </Device>
